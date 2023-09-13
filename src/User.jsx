@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from './Layout'
 import { Link } from 'react-router-dom'
+import useFormData from './FormDataContext'
 import './index.css'
 
-const mockData = [
-    { id:'E001', name: 'Harry', lastname: 'Potter', position: 'Senior Software Developer'},
-    { id:'E002', name: 'Hermione', lastname: 'Granger', position: 'Product Manager'},
-    { id:'E003', name: 'Ronald', lastname: 'Weasley', position: 'Junior Software Developer'},
-    { id:'E004', name: 'Draco', lastname: 'Malfoy', position: 'Business Analyst'},
-  ]
+
 
 const User = () => {
+    const {dataArray} = useFormData();
     
     return (
         <Layout>
@@ -30,11 +27,13 @@ const User = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Harry</td>
-                            <td>Potter</td>
-                            <td>Software Developer</td>
-                        </tr>
+                        {dataArray.map((userData) => (
+                            <tr key={userData.id}>
+                                <td>{userData.name}</td>
+                                <td>{userData.lastname}</td>
+                                <td>{userData.position}</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>

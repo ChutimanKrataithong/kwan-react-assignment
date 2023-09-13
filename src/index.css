@@ -149,7 +149,7 @@ th, td{
 }
 .admin-h2{
     font-size: 3rem;
-    color: rgb(97, 194, 175);
+    color: rgb(142, 100, 157);
 }
 .admin-table{
     border: 1px solid rgb(225, 199, 234);
@@ -220,7 +220,7 @@ input{
 }
 .owner-page h1{
     font-size: 3rem;
-    color: rgb(13, 78, 80)
+    color: rgb(18, 109, 89);
 }
 .owner-page img{
     width: 20rem;
@@ -234,7 +234,10 @@ input{
     text-align: left;
     padding-left: 2rem;
     font-size: 2rem;
+    color: rgb(18, 109, 89);
 }
 .shortbio p {
     margin: 1rem;
+    font-size: 1.5em;
+    color: rgb(0, 88, 69);
 }
