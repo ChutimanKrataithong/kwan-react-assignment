@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return(
         <ul className='navigation'>
-            <img src="/public/nap.png" alt="" />
+            <img src="https://cdn-icons-png.flaticon.com/256/7465/7465421.png" alt="" />
             <div className="link">
             <li><Link to='/' 
             style={{color: isHomeHovering ? '#333' : 'white',textDecoration: 'none'}} 
