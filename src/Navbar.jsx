@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return(
         <ul className='navigation'>
-            <img src="/public/programmer.png" alt="" />
+            <img src="/public/nap.png" alt="" />
             <div className="link">
             <li><Link to='/' 
             style={{color: isHomeHovering ? '#333' : 'white',textDecoration: 'none'}} 
